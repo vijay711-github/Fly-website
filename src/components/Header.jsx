@@ -4,12 +4,10 @@ const Header = () => {
   return (
 		<>
 			<div className="flex justify-between p-5 ">
-				<div>
-					<img
-						src='/src/assets/logo.jpg'
-						className="w-25 h-20"
-						alt=" logo"
-					/>
+			  <div>
+				  <h2 className="text-2xl">
+					  <span className="bg-gradient-to-r from-red-500 via-pink-500  to-purple-500 text-transparent bg-clip-text">FLY</span>
+					  </h2>
 				</div>
 				<div>
 					<button className="py-3 px-7 bg-slate-800 text-white rounded-md hover:bg-slate-600">

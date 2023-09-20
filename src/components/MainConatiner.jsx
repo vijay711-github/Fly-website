@@ -11,9 +11,9 @@ const testimonials = [
 const MainConatiner = () => {
   return (
 		<div>
-			<h2 className="text-7xl my-10 text-center font-extralight">
+			<h2 className="text-7xl my-10 text-center font-light">
 				make your stories fly{" "}
-				<span className="block "> on all social platforms!</span>
+				<span className="block bg-gradient-to-r from-red-500 via-pink-500  to-purple-500 text-transparent bg-clip-text"> on all social platforms!</span>
 			</h2>
 			<div className="flex justify-center">
 				<div className="flex justify-center items-center text-5xl m-20 gap-5 w-[500px] flex-wrap">
