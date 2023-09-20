@@ -6,7 +6,7 @@ const Header = () => {
 			<div className="flex justify-between p-5 ">
 				<div>
 					<img
-						src="/src/assets/react.svg "
+						src='/src/assets/logo.jpg'
 						className="w-25 h-20"
 						alt=" logo"
 					/>

@@ -1,5 +1,13 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 import React from 'react'
-import {FaYoutube,FaInstagram, FaFacebook, FaTwitter, FaSnapchat, FaLinkedin, FaTiktok, FaWhatsapp, FaPinterest, FaReddit, FaTelegram} from 'react-icons/fa'
+import { FaYoutube, FaInstagram, FaFacebook, FaTwitter, FaSnapchat, FaLinkedin, FaTiktok, FaWhatsapp, FaPinterest, FaReddit, FaTelegram, FaMicrosoft, FaDribbble, FaQuora, FaVimeo, FaMeetup, FaXing } from 'react-icons/fa'
+const testimonials = [
+	{ tag: "Post on Fly and go live everywhere!" },
+	{ tag: "Save time by posting to all your favorite platforms at once." },
+	{ tag: "Create & edit your media content on Fly" },
+	{ tag: "Manage and schedule your posts efficiently" },
+	{ tag: "Track your post performance and engagement from a single dashboard" },
+];
 const MainConatiner = () => {
   return (
 		<div>
@@ -28,30 +36,32 @@ const MainConatiner = () => {
 				</button>
 			</div>
 			<h2 className="text-5xl text-center my-7 bold ">Why Fly?</h2>
-			<div className="flex justify-center flex-wrap gap-10 font-bold ">
-				<div className="bg-blue-300 w-40 p-5 m-3 rounded-md">
-					<p>Post on Fly and go live everywhere!</p>
-				</div>
-				<div className="bg-blue-300 w-40 p-5 m-3 rounded-md">
-					<p>Save time by posting to all your favorite platforms at once.</p>
-				</div>
-				<div className="bg-blue-300 w-40 p-5 m-3 rounded-md">
-					<p>Reach a wider audience and increase your social media presence.</p>
-				</div>
-				<div className="bg-blue-300 w-40 p-5 m-3 rounded-md">
-					<p>Create & edit your media content on Fly</p>
-				</div>
-				<div className="bg-blue-300 w-40 p-5 m-3 rounded-md">
-					<p>Manage and schedule your posts efficiently</p>
-				</div>
-				<div className="bg-blue-300 w-40 p-5 m-3 rounded-md">
-					<p>
-						Track your post performance and engagement from a single dashboard
-					</p>
-				</div>
+			<div className="flex justify-center flex-wrap gap-10 font-bold  ">
+				{testimonials.map((item, index) => (
+					<div key={index} className="bg-blue-300 w-40 p-5 m-3 rounded-md">
+						{item.tag}
+					</div>
+				))}
 			</div>
 			<div>
-				<h2 className='text-center text-4xl m-3 font-bold'>6 Top Social Media platforms and counting...</h2>
+				<h2 className="text-center text-4xl  font-bold italic m">
+					6 Top Social Media platforms and counting...
+				</h2>
+				<div className="flex justify-center">
+					<div className="flex justify-center items-center text-5xl m-20 gap-5 w-[500px] flex-wrap">
+						<FaMicrosoft className="text-blue-300 cursor-pointer animate-pulse hover:scale-50 transition-all" />
+						<FaDribbble className="text-black-500 cursor-pointer animate-pulse hover:scale-50 transition-all" />
+						<FaQuora className="text-red-500 cursor-pointer animate-pulse hover:scale-50 transition-all" />
+						<FaVimeo className="text-blue-500 cursor-pointer animate-pulse hover:scale-50 transition-all" />
+						<FaMeetup className="text-yellow-500 cursor-pointer animate-pulse hover:scale-50 transition-all" />
+						<FaXing className="text-red-500 cursor-pointer animate-pulse hover:scale-50 transition-all" />
+					</div>
+				</div>
+			</div>
+			<div className="flex justify-center">
+				<button className="text-white bg-black py-4 px-8 m-2 rounded-lg text-2xl font-mono hover:translate-y-1 animate-bounce">
+					Join Now
+				</button>
 			</div>
 		</div>
 	);
